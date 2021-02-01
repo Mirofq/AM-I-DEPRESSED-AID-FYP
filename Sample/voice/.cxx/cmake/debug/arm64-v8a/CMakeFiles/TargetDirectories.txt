@@ -1,0 +1,3 @@
+C:/Users/User/AndroidStudioProjects/AID-APPLICATION/Sample/voice/.cxx/cmake/debug/arm64-v8a/CMakeFiles/vokaturi-lib.dir
+C:/Users/User/AndroidStudioProjects/AID-APPLICATION/Sample/voice/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/User/AndroidStudioProjects/AID-APPLICATION/Sample/voice/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

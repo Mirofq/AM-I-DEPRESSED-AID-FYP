@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.depressiontest">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".VoiceActivity"
+            android:label="@string/voiceEmotion"
+            android:launchMode="singleTop"
+            android:parentActivityName=".FragmentVoice"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VoiceActivity" />
+        </activity>
+        <activity android:name=".StartVoice"
+            android:label="@string/start_rec"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".FragmentVoice"
+            android:label="@string/fragment"
+            android:launchMode="singleTop"
+            android:parentActivityName=".StartVoice"
+            android:screenOrientation="portrait">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".FragmentVoice" />
+        </activity>
+
+        <activity android:name=".StartQuestionVoice"
+            android:label="@string/question"
+            android:launchMode="singleTop"
+            android:parentActivityName=".VoiceActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".StartQuestionVoice" />
+        </activity>
+
+        <activity android:name=".QuestionActivity"
+            android:label="@string/question"
+            android:launchMode="singleTop"
+            android:parentActivityName=".StartQuestionVoice"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuestionActivity" />
+        </activity>
+
+        <activity android:name=".ResultActivity"
+            android:label="@string/result_test"
+            android:launchMode="singleTop"
+            android:parentActivityName=".QuestionActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ResultActivity" />
+        </activity>
+
+        <activity
+            android:name=".TreatmentActivity"
+            android:label="@string/dietdiet"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".DietActivity"
+            android:label="@string/dietdiet"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ExerciseInfo"
+            android:label="@string/overview1"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ExercisePageActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExerciseInfo" />
+        </activity>
+
+        <activity
+            android:name=".ViewDash"
+            android:label="@string/viewdash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".DietActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewDash" />
+        </activity>
+
+        <activity
+            android:name=".ViewMed"
+            android:label="@string/viewmed"
+            android:launchMode="singleTop"
+            android:parentActivityName=".DietActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewMed" />
+        </activity>
+
+        <activity
+            android:name=".FoodInfo"
+            android:label="@string/overview"
+            android:launchMode="singleTop"
+            android:parentActivityName=".FoodPageActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FoodInfo" />
+        </activity>
+
+        <activity
+            android:name=".ExercisePageActivity"
+            android:label="@string/exercise"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FoodPageActivity"
+            android:label="Diet"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MildVidActivity"
+            android:label="@string/mildactivities"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ExercisePageActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MildVidActivity" />
+        </activity>
+
+        <activity
+            android:name=".SevereVidActivity"
+            android:label="@string/severeactivities"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ExercisePageActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SevereVidActivity" />
+        </activity>
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:label="@string/exercise"
+            android:launchMode="singleTop"
+            android:parentActivityName=".QuestionActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ResultActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".Activity2"
+            android:label="@string/exercise"
+            android:launchMode="singleTop"
+            android:parentActivityName=".FoodPageActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity2" />
+        </activity>
+
+
+
+    </application>
+
+</manifest>

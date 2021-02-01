@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.microsoft.projectoxford.face.samples.ui.AboutActivity">
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/InfoDisclaimer"
+        android:layout_width="305dp"
+        android:layout_height="248dp"
+        android:gravity="center"
+        android:text="AID is a simple tool developed to evaluate the mental state of a person based on the emotion detected from their face or voice together with AID Questionnaire score result. This self-test is explicitly meant to give you insight in your mood state and cannot replace professional help. When in doubt, please contact your general practitioner. No rights can be derived from the results of this test. Our AID Questionnaire is referenced from the Patient Health Questionnaire-9 (PHQ-9) which is a verified depression module. All images and icons belongs to its respective owners."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/textAID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="AID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/InfoDisclaimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textDescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Early Self-Diagnosis Tool for Depression"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/definedepression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="browser1"
+        android:text="@string/what_is_depression"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/selfguide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoDisclaimer"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/selfguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="browser2"
+        android:text="@string/self_help_guide"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Developer : FSKTM UPM"
+        android:textColor="#0E0E0E"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewweb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfguide"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/developers3"
+        android:layout_width="202dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:onClick="fsktmig"
+        android:text="https://www.instagram.com/fsktm_upm/"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <ImageView
+        android:id="@+id/imageViewig"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/developers3"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@drawable/iglagi" />
+
+    <TextView
+        android:id="@+id/developers2"
+        android:layout_width="202dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:onClick="fsktmfb"
+        android:text="https://www.facebook.com/fcsitupm"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/imageViewfb"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/developers2"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893"
+        app:srcCompat="@drawable/fb" />
+
+    <ImageView
+        android:id="@+id/imageViewweb"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/developers1"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858"
+        app:srcCompat="@drawable/web" />
+
+    <TextView
+        android:id="@+id/developers1"
+        android:layout_width="202dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:onClick="fsktmweb"
+        android:text="https://fsktm.upm.edu.my/"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

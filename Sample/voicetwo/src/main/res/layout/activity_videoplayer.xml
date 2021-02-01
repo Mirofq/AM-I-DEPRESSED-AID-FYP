@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoPlayerActivity"
+    android:orientation="vertical">
+
+
+    <view
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttonblue"
+        android:text="START EXERCISE"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        android:text="AID does not claim any right over any of the graphics, images, songs used in this video. All rights reserved to the respective copyright owners." />
+
+
+</LinearLayout>

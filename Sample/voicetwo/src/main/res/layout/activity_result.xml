@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TestResult"
+                android:layout_width="match_parent"
+                android:layout_height="575dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Depression Severity Result"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@id/recList" />
+
+            <Button
+                android:id="@+id/recList"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonblue"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Proceed to Treatment"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintTop_toBottomOf="@id/TestResult"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
